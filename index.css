@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #4dc2d6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.tasks{    
+    width: 70%;
+    margin: 0;
+    margin: auto;
+
+}
+
+.container{
+    text-align: center;
+    width: 70%;
+    padding-top: 15vh;
+    margin: auto;
+}
+
+.inputDiv{
+    display: flex;
+    padding: 20px;
+    height: 80px;
+}
+
+.addBtn{
+    border-radius: 5px;
+    width: 50px;
+}
+
+
+.textInput{
+    width: 100%;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.task{
+    display: flex;
+    margin: 20px;
+    background-color: #a3dff1;
+    border: 2px solid black;
+    height: 50px;
+}
+
+.taskData{
+    line-height: 50px;
+    width: calc(100% - 40px);
+    text-align: left;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+
+.removeIcon{
+    line-height: 50px;
+    width: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+h1,h2,h3{
+    margin: 20px;
+}
+
+h1{
+    color: white;
+    font-weight: 900;
+}
+
+.enterHeading{
+    color: #f1bb45;
+}
+
+.completeHeading{
+    color: #59f86e;
+}
+
+.taskCompleted{
+    background-color: #59f86e;
+}
+
+.removeHeading{
+    color: #000;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+@media(max-width: 600px){
+    h1{
+        margin: 10px;
+        font-size: 1.3em;
+    }
+    h3{
+        margin: 10px;
+        font-size: 1em;
+    }
+    .container{
+        padding-top: 5vh;
+        width: 95%;
+    }
+}

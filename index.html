@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="./index.css">
+    <title>TO-DO</title>
+</head>
+<body>
+    <div class="container">
+        <h1>WORK TO-DOS</h1>
+        <h3 class="enterHeading">Enter text into the input fields to add items to your list.</h3>
+        <h3 class="completeHeading">Click the item to mark it as complete.</h3>
+        <h3 class="removeHeading">Click the "X" to remove the item from your list.</h3>
+    
+        <div class="inputDiv">
+            <input type="text" class="textInput" placeholder="New Item...">
+            <button class="addBtn">
+                <i class="fa fa-lg fa-pencil"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- All the tasks will be added dynamically inside this div tag -->
+    <div class="tasks" id="tasks">
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</html>
